@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Smart-TV</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../css/servicemenu.css " />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-dark border-bottom border-body"
+      data-bs-theme="dark"
+    >
+      <div class="containerrr justify-content-center">
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav fs-5 gap-4">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../card/card.html"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="../servicemenu/servicemenu.html"
+                >Service</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex justify-content-center my-4">
+      <a href="./servicemenu.html" class="btn btn-primary btn-lg">Go Back</a>
+    </div>
+    <div class="container">
+      <h2 class="text-center mb-4">Smart-TV Management</h2>
+
+      <form class="row g-3" id="formWorker">
+        <input type="text" id="inpId" hidden />
+
+        <div class="col-md-6">
+          <label for="inpName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="inpName" required />
+        </div>
+
+        <div class="col-md-6">
+          <label for="inpServiceName" class="form-label">Service Name</label>
+          <select class="form-select" id="inpServiceName" required>
+            <option selected disabled value="">Choose...</option>
+            <option value="power">🔌 Power & Display Issues</option>
+            <option value="audio">🔊 Audio Issues</option>
+            <option value="software">🧠 Software / Logic Control</option>
+            <option value="input">🎮 Input/Control Hardware</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label for="inpService" class="form-label">Repaired/Replaced</label>
+          <select class="form-select" id="inpService" required>
+            <option value="">Choose repaired/replaced</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label for="inpRating" class="form-label">Rating (1–5)</label>
+          <select class="form-select" id="inpRating" required>
+            <option selected disabled value="">Choose rating</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <button class="btn btn-info d-none" id="btnEdit">✏️</button>
+        </div>
+      </form>
+
+      <input
+        type="text"
+        class="form-control mt-2"
+        id="inpSearch"
+        placeholder="Search"
+      />
+      <div class="containerr d-flex flex-wrap gap-3 w">
+        <div class="card m-2 flex-grow-1">
+          <div class="card-body">
+            <h5 class="card-title">Ardit</h5>
+            <h6 class="card-title mb-2 text-body-secondary text-capitalize">
+              🔌 Power &amp; Display Issues power
+            </h6>
+            <p class="card-text">Power Supply Board</p>
+            <p class="card-text">Rating: 3/5</p>
+            <h5 class="">
+              <button class="btn btn-danger">❌</button>
+              <button class="btn btn-info">✏</button>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark text-white py-4 mt-auto">
+      <div class="container text-center">
+        <p class="mb-1">© 2025 SmartTV Repair Services. All rights reserved.</p>
+        <p class="mb-0">
+          Contact us:
+          <a href="mailto:support@smarttvrepair.com" class="text-white"
+            >support@smarttvrepair.com</a
+          >
+          | Phone: +1 234 567 890
+        </p>
+        <div class="mt-3">
+          <a href="#" class="text-white mx-2">Privacy Policy</a> |
+          <a href="#" class="text-white mx-2">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../../js/servicMenu/addWorker/main.js" type="module"></script>
+  </body>
+</html>
